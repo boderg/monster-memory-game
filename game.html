@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Monster Memory Game</title>
 </head>
 <body>
+  <div class="score-panel">
+    <p class="moveCounter">Moves: <span id="moveCounter">0</span></p>
+    <p id="timer">Time: 0s</p>
+    <button class="reset" id="reset">Reset Game</button>
+    </div>
   <section class="memory-game">
   
   <div class="memory-card" data-framework="the-demigog.jpg">
