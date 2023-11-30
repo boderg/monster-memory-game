@@ -56,3 +56,85 @@ body {
 .front-face {
   transform: rotateX(180deg);
 }
+
+.score-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 100px auto 0 auto;
+  width: 640px;
+  background: transparent;
+  font-size: 2em;
+  color: orangered;
+}
+
+.reset {
+  font-size: 1em;
+  font-family: 'Rubik Burned', sans-serif;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  color: orangered;
+}
+
+.reset:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  border-radius: 5px;  
+}
+
+.title {
+  font-size: 6em;
+  font-weight: 100;
+  font-family: 'Rubik Burned', sans-serif;
+  color: orangered;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.start {
+  background: transparent;
+  border: none;
+  display: flex;
+  margin: 100px auto;
+}
+
+.start a {
+  font-size: 3rem;
+  font-family: 'Rubik Burned', sans-serif;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  color: orangered;
+  text-decoration: none;
+}
+
+.start a:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #fff; 
+}
+
+.rules {
+  background: transparent;
+  border: none;
+  display: flex;
+  margin: 25px auto;
+}
+
+.rules a {
+  font-size: 2rem;
+  font-family: 'Rubik Burned', sans-serif;
+  background: transparent;
+  border: none;
+  padding: 5px;
+  color: orangered;
+  text-decoration: none;
+}
+
+.rules a:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+}
