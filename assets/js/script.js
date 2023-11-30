@@ -1,5 +1,7 @@
 const cards = document.querySelectorAll('.memory-card');
 
+let moveCounter = 0;
+
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -18,6 +20,9 @@ function flipCard() {
   }
 
   secondCard = this;
+
+  moveCounter++;
+  document.getElementById("moveCounter").innerHTML = moveCounter;
 
   checkForMatch();
 }
@@ -59,4 +64,3 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
