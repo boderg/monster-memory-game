@@ -18,13 +18,12 @@ function flipCard() {
   }
 
   secondCard = this;
-  hasFlippedCard = false;
 
   checkForMatch();
 }
 
 function checkForMatch() {
-  let isMatch = firstCard.dataset.name === secondCard.dataset.name;
+  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
   isMatch ? disableCards() : unflipCards();
 }
@@ -51,6 +50,13 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 16);
+    card.style.order = randomPos;
+  });
+})();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
