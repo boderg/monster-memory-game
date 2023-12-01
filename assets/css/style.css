@@ -169,8 +169,8 @@ li {
 .close {
   color: orangered;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 100;
 }
 
 .close:hover,
