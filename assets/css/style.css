@@ -93,16 +93,16 @@ body {
   margin: 100px auto;
 }
 
-.start {
+.enter {
   background: transparent;
   border: none;
   display: flex;
   margin: 100px auto;
 }
 
-.start a {
+.enter a {
   font-size: 3rem;
-  font-family: 'Rubik Burned', sans-serif;
+  font-family: 'Rubik Wet Paint', sans-serif;
   background: transparent;
   border: none;
   padding: 5px;
@@ -110,7 +110,7 @@ body {
   text-decoration: none;
 }
 
-.start a:hover {
+.enter a:hover {
   cursor: pointer;
   background: transparent;
   color: #fff; 
