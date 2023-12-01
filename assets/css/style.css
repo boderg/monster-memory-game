@@ -119,17 +119,16 @@ body {
 .rules {
   background: transparent;
   border: none;
-  display: flex;
   margin: 25px auto;
-}
-
-.rules a {
   font-size: 2rem;
-  font-family: 'Rubik Burned', sans-serif;
-  background: transparent;
-  border: none;
+  font-family: 'Rubik Wet Paint', sans-serif;
   padding: 5px;
   color: orangered;
+}
+
+.rules:hover {
+  color: #fafafa;
+}
 
 .modal {
   display: none;
