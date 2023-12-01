@@ -11,7 +11,7 @@ body {
   /* background: #7c1c95; */
   background-image: url(/assets/images/grunge-wall-texture.jpg);
   background-size: cover;
-  font-family: 'Rubik Burned', sans-serif;
+  font-family: 'Rubik Wet Paint', sans-serif;
 }
 
 .memory-game {
@@ -70,7 +70,7 @@ body {
 
 .reset {
   font-size: 1em;
-  font-family: 'Rubik Burned', sans-serif;
+  font-family: 'Rubik Wet Paint', sans-serif;
   background: transparent;
   border: none;
   padding: 5px;
@@ -87,7 +87,7 @@ body {
 .title {
   font-size: 6em;
   font-weight: 100;
-  font-family: 'Rubik Burned', sans-serif;
+  font-family: 'Rubik Wet Paint', sans-serif;
   color: orangered;
   text-align: center;
   margin: 100px auto;
@@ -178,6 +178,4 @@ li {
   color: #fafafa;
   text-decoration: none;
   cursor: pointer;
-  background: transparent;
-  color: #fff;
 }
