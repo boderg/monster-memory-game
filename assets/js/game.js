@@ -92,3 +92,8 @@ function startTimer() {
   }, 1000);
 }
 
+function resetGame() {
+  timeleft = 120;
+  clearInterval(countdownTimer);
+  timerStarted = false;
+}
