@@ -6,14 +6,13 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-let timeLeft = 120; 
+let timeLeft = 120;
 let countdownTimer;
 
 let timerStarted = false;
 
 function flipCard() {
   if (lockBoard) return;
-
   if (this === firstCard) return;
 
   this.classList.add('flip');
@@ -81,13 +80,13 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function startTimer() {
-  countdownTimer = setInterval(function() {
+  countdownTimer = setInterval(function () {
     timeLeft--;
     document.getElementById("timer").innerHTML = timeLeft;
 
     if (timeLeft <= 0) {
       clearInterval(countdownTimer);
-      
+
     }
   }, 1000);
 }

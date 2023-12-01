@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-  <title>Monster Memory Game</title>
-</head>
-<body>
-  
-<h1 class="title">Monster Memory Game</h1>
-<button class="enter"><a href="game.html">Enter Game</a></button>
-<button class="rules" id="rules">How to Play</button>
 
-<div class="modal" id="modal">
-  <div class="content" id="content">
-    <span class="close" id="close">&times;</span>
-    <h2>How to Play</h2><br>
-    <p><ol>
-      <li>Click Enter to go to the game page</li>
-      <li>Click any card to start the game</li>
-      <li>Match cards by clicking on two cards in turn</li>
-      <li>If the cards match they remain turned</li>
-      <li>If the cards do not match they flip back (try again)</li>
-      <li>The game ends when all cards are matched</li>
-      <li>The Moves counter records how many moves you have taken (1 move per pair of cards turned)</li>
-      <li>The timer records how long it has taken to complete all matches</li>
-      <li>The reset button resets the game and randomises the cards</li>
-      <li>The cards are reset and randomised at the end of every game</li>
-    </ol></p>
-  </div>
-</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Monster Memory Game</title>
+  </head>
 
-<script src="./assets/js/modal.js"></script>
-</body>
+  <body>
+
+    <h1 class="title">Monster Memory Game</h1>
+    <button class="enter"><a href="game.html">Enter Game</a></button>
+    <button class="rules" id="rules">How to Play</button>
+
+    <div class="modal" id="modal">
+      <div class="content" id="content">
+        <span class="close" id="close">&times;</span>
+        <h2>How to Play</h2><br>
+        <p>
+          <ol>
+            <li>Click Enter to go to the game page</li>
+            <li>Click any card to start the game</li>
+            <li>Match cards by clicking on two cards in turn</li>
+            <li>If the cards match they remain turned</li>
+            <li>If the cards do not match they flip back (try again)</li>
+            <li>The game ends when all cards are matched</li>
+            <li>The Moves counter records how many moves you have taken (1 move per pair of cards turned)</li>
+            <li>The timer records how long it has taken to complete all matches</li>
+            <li>The reset button resets the game and randomises the cards</li>
+            <li>The cards are reset and randomised at the end of every game</li>
+          </ol>
+        </p>
+      </div>
+    </div>
+
+    <script src="./assets/js/modal.js"></script>
+  </body>
+
 </html>
