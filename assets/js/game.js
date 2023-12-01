@@ -97,3 +97,5 @@ function resetGame() {
   clearInterval(countdownTimer);
   timerStarted = false;
 }
+
+document.querySelector('.reset').addEventListener('click', resetGame);
