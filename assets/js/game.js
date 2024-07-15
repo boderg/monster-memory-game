@@ -70,14 +70,12 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-(function shuffle() {
+function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 16);
     card.style.order = randomPos;
   });
-})();
-
-cards.forEach(card => card.addEventListener('click', flipCard));
+}
 
 function startTimer() {
   countdownTimer = setInterval(function () {
@@ -86,15 +84,27 @@ function startTimer() {
 
     if (timeLeft <= 0) {
       clearInterval(countdownTimer);
-
     }
   }, 1000);
 }
 
 function resetGame() {
-  timeleft = 120;
+  timeLeft = 120;
+  document.getElementById("timer").innerHTML = timeLeft;
   clearInterval(countdownTimer);
   timerStarted = false;
+  moveCounter = 0;
+  document.getElementById("moveCounter").innerHTML = moveCounter;
+  cards.forEach(card => {
+    card.classList.remove('flip');
+    card.addEventListener('click', flipCard);
+  });
+  resetBoard();
+  lockBoard = false;
+  shuffle();
 }
 
-document.querySelector('.reset').addEventListener('click', resetGame);
+document.querySelector('#reset').addEventListener('click', resetGame);
+
+shuffle();
+cards.forEach(card => card.addEventListener('click', flipCard));
